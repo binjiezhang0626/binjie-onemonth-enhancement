@@ -3,17 +3,14 @@ module.exports = function (api) {
 
   const presets = [
     [
-      "@babel/env",
-      {
-        targets: "> 0.25%, not dead",
-        useBuiltIns: "usage",
-      },
+      "@babel/preset-env"
     ],
+    [
+      "@babel/preset-react"
+    ]
   ];
-  // const plugins = [ ... ];
 
   return {
-    presets,
-    // plugins
+    presets
   };
 }
