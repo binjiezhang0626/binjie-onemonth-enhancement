@@ -1,4 +1,4 @@
-.Container{
+.Frame{
   background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,11 @@
   width: 35%;
   border-color: #b8b8b8;
   border-radius: 1em;
+}
+.Header {
+  margin-top: 20pt;
+  font-family: 'Lato', sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  color: #b8b8b8;
 }

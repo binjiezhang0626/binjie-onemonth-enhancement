@@ -4,15 +4,15 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import './TodoItem.css';
 
-const TodoItem = () => {
+const TodoItem = ({ todoItem }) => {
+  console.log(todoItem)
   return (
     <div className="TodoItem">
-      <span>Item</span>
+      <span>{todoItem.text}</span>
       <div className="Icons">
         <DeleteIcon id="deleteIcon"></DeleteIcon>
         <CheckCircleOutlineIcon id="check"></CheckCircleOutlineIcon>
       </div>
-
     </div>
   )
 }

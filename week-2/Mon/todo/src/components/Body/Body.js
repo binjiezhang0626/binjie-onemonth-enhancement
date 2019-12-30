@@ -1,13 +1,13 @@
 import React from 'react';
 import './Body.css';
-import InputField from './InputField/InputField';
-import TodoItems from './TodoItems/TodoItems';
+import AddTodo from '../AddTodo/AddTodo';
+import TodoItems from '../TodoItems/TodoItems';
 
 
 const Body = () => {
   return (
     <div className="Body">
-      <InputField />
+      <AddTodo />
       <TodoItems />
     </div>
   )

@@ -1,13 +1,13 @@
 import React from 'react';
-import './InputField.css';
+import './AddTodo.css';
 
-const InputField = () => {
+const AddTodo = () => {
   return (
-    <div className="InputField">
+    <div className="AddTodo">
       <input className="input" type="text"></input>
       <button className="button" type="submit">Add</button>
     </div>
   )
 }
 
-export default InputField;
+export default AddTodo;

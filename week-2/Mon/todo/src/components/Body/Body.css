@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 20pt;
   width: 80%;
+  height: 70%;
 }

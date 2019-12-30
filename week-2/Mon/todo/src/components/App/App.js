@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Container from './components/Container/Container'
+import Frame from '../Frame/Frame'
 
 const App = () => {
   return (
     <div className="App">
-      <Container />
+      <Frame />
     </div>
   );
 }
