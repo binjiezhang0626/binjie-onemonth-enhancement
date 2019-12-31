@@ -1,14 +1,14 @@
 import React from 'react';
 import './Body.css';
 import AddTodo from '../AddTodo/AddTodo';
-import TodoItems from '../TodoItems/TodoItems';
+import TodoList from '../TodoList/TodoList';
 
 
 const Body = () => {
   return (
     <div className="Body">
       <AddTodo />
-      <TodoItems />
+      <TodoList />
     </div>
   )
 }

@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js",
+    "start": "webpack-dev-server --config ./webpack.config.js  --open",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,7 +24,6 @@
     "@babel/polyfill": "^7.7.0",
     "@material-ui/core": "^4.8.1",
     "@material-ui/icons": "^4.5.1",
-    "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
