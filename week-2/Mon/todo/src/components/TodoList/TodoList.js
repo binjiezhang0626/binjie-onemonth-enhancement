@@ -7,8 +7,8 @@ const TodoList = ({ todoItems }) => {
 
   return (
     <div className="TodoList">
-      {todoItems.map((todoItem, index) => (
-        <TodoItem todoItem={todoItem} key={index} />
+      {todoItems.map((todoItem) => (
+        <TodoItem todoItem={todoItem} key={todoItem.id} />
       ))}
     </div>
   )
