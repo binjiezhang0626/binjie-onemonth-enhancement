@@ -6,12 +6,12 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import './TodoItem.css';
 
-const TodoItem = ({ todoItem, deleteTodoFunction, toggleTodoFunction }) => {
+const TodoItem = ({ todoItem, deleteTodo, toggleTodo }) => {
   const handleDelete = () => {
-    deleteTodoFunction(todoItem.id)
+    deleteTodo(todoItem.id)
   }
   const handleToggle = () => {
-    toggleTodoFunction(todoItem.id)
+    toggleTodo(todoItem.id)
   }
   console.log(todoItem)
   return (
@@ -25,11 +25,11 @@ const TodoItem = ({ todoItem, deleteTodoFunction, toggleTodoFunction }) => {
   )
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    deleteTodoFunction: index => dispatch(deleteTodo(index)),
-    toggleTodoFunction: index => dispatch(toggleTodo(index))
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     deleteTodoFunction: index => dispatch(deleteTodo(index)),
+//     toggleTodoFunction: index => dispatch(toggleTodo(index))
+//   }
+// }
 
-export default connect(null, mapDispatchToProps)(TodoItem);
+export default connect(null, { deleteTodo, toggleTodo })(TodoItem);

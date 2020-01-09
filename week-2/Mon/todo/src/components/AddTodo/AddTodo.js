@@ -3,7 +3,7 @@ import './AddTodo.css';
 import { connect } from 'react-redux';
 import { addTodo } from '../../actions/actions';
 
-const AddTodo = ({ addTodoFunction }) => {
+const AddTodo = ({ addTodo }) => {
 
   const [input, setInput] = useState('');
 
@@ -12,7 +12,7 @@ const AddTodo = ({ addTodoFunction }) => {
     if (!input.trim()) {
       return
     }
-    addTodoFunction(input)
+    addTodo(input)
     setInput('')
   }
   const handleChange = event => {
@@ -27,10 +27,10 @@ const AddTodo = ({ addTodoFunction }) => {
   )
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    addTodoFunction: text => dispatch(addTodo(text))
-  }
-}
+// const mapDispatchToProps = dispatch => {
+//   return {
+//     addTodoFunction: text => dispatch(addTodo(text))
+//   }
+// }
 
-export default connect(null, mapDispatchToProps)(AddTodo);
+export default connect(null, { addTodo })(AddTodo);
